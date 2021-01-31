@@ -28,6 +28,7 @@ const io = require("socket.io")(listener);
 
 io.on("connection", async () => {
   console.log("Client connected");
+  console.log("Client connected");
 
   const messages = await Message.findAll();
 
